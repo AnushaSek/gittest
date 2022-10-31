@@ -11,4 +11,4 @@ if my_repo.is_dirty():
     my_repo.git.add('--all')
     my_repo.git.commit('-m', 'second commit', author=author)
     origin = my_repo.remote(name='origin')
-    origin.push()
+    origin.push('test')
